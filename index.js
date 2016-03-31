@@ -8,6 +8,6 @@ module.exports = function convert(src, dst, options, callback) {
 		options = {};
 	}
 
-	var command = 'fontforge -script "' + forgeScriptPath + '" "'+src+'" "'+dst+'"'
+	var command = 'fontforge -script -lang=ff "' + forgeScriptPath + '" "'+src+'" "'+dst+'"'
 	exec(command, callback);
 };
